@@ -4,5 +4,6 @@ namespace RepositoryLayer.Interface;
 
 public interface IUserRL
 {
-    public RegistrationModel RegisterUserRL(RegistrationModel registrationModel);
+    public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register);
+    public ResponseModel<LoginModel> LoginUserRL(LoginModel login);
 }

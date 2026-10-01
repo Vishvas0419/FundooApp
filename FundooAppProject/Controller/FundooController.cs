@@ -17,16 +17,29 @@ public class FundooController : ControllerBase
 
     [HttpPost]
     [Route("register")]
-    public ResponseModel<RegistrationModel> RegisterUser(RegistrationModel registrationModel)
+    public IActionResult RegisterUser(RegistrationModel registrationModel)
     {
-        ResponseModel<RegistrationModel> responseModel = new ResponseModel<RegistrationModel>();
-        RegistrationModel data =  userBL.RegisterUserBL(registrationModel);
-        responseModel.IsSuccess = true;
-        responseModel.Message = "Success";
-        responseModel.Data = data;
-        return responseModel;
+        ResponseModel<RegistrationModel> response =   userBL.RegisterUserBL(registrationModel);
+        if (response.IsSuccess)
+        {
+            return Ok(response);
+        }
+        return BadRequest(response);
     }
 
+    [HttpPost]
+    [Route("login")]
+    public IActionResult LoginUserBL(LoginModel login)
+    {
+        ResponseModel<LoginModel> response = userBL.LoginUserBL(login);
+        if (response.IsSuccess)
+        {
+            return Ok(response);
+        }
+        return BadRequest(response);
+    }
+
+    [HttpGet]
     public void Default()
     {
         Console.WriteLine("Application is running");

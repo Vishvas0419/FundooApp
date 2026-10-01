@@ -13,8 +13,13 @@ public class UserBL : IUserBL
         this.userRL = userRL;
     }
     
-    public RegistrationModel RegisterUserBL( RegistrationModel registrationModel)
+    public ResponseModel<RegistrationModel> RegisterUserBL(RegistrationModel register)
     {
-        return userRL.RegisterUserRL(registrationModel);
+        return userRL.RegisterUserRL(register);
+    }
+
+    public ResponseModel<LoginModel> LoginUserBL(LoginModel login)
+    {
+        return userRL.LoginUserRL(login);
     }
 }
