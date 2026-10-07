@@ -1,13 +1,6 @@
-# .NET build files
+.vs/
 bin/
 obj/
-
-# JetBrains Rider
-.idea/
-
-# macOS
-.DS_Store
-
-# User-specific files
-*.user
-*.suo
+Debug/
+Release/
+.env

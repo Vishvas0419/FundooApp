@@ -6,13 +6,16 @@ public class RegistrationModel
 {
     [MaxLength(15 , ErrorMessage = "Password is too long")]
     public string FirstName { get; set; }
+
     [MaxLength(15 , ErrorMessage = "Password is too long")]
     public string LastName { get; set; }
+
     [Required]
     [RegularExpression(@"^[a-z][a-z0-9]{1,15}$")]
     public string UserName { get; set; }
-    [RegularExpression(@"^[a-zA-Z0-9]{1,9}")]
+
     [Required]
+    [RegularExpression(@"^[a-zA-Z0-9]{1,9}")]
     public string Password { get; set; }
     
     [RegularExpression(@"^[0-9]{1,11}$")]

@@ -1,13 +1,15 @@
 using BusinessLayer.Interface;
 using BusinessLayer.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
 namespace Fundoo.Controllers;
 
-[ApiController]
-[Route("/api/[controller]")]
-public class FundooController : ControllerBase
+[ApiController] // Treat the class as a ASP.NET Core Web API controller
+[Route("/api/[controller]")] //controller route
+//Route defines the base URL for the controller [controller] -> replaced with the controller name i.e /api/Fundoo
+public class FundooController : ControllerBase //inside asp.net namespace we inherit it to use the Ok(), BadRequest() methods
 {
     private IUserBL userBL;
     public FundooController(IUserBL userBL)
@@ -15,35 +17,46 @@ public class FundooController : ControllerBase
         this.userBL = userBL;
     }
 
-    [HttpPost]
-    [Route("register")]
+    [HttpPost] //type of client req 
+    [Route("register")] //method route final url final http method: POST /api/Fundoo/register
+    //if user hits this api call RegisterUser will gets executed
     public IActionResult RegisterUser(RegistrationModel registrationModel)
     {
-        ResponseModel<RegistrationModel> response =   userBL.RegisterUserBL(registrationModel);
+        ResponseModel<RegistrationModel> response =  userBL.RegisterUserBL(registrationModel);
         if (response.IsSuccess)
         {
-            return Ok(response);
+            return Ok(response); //200
         }
-        return BadRequest(response);
+        return BadRequest(response); //400
     }
 
     [HttpPost]
-    [Route("login")]
-    public IActionResult LoginUserBL(LoginModel login)
+    [Route("login")] //POST /api/fundoo/login
+    public IActionResult LoginUserBL(LoginModel login)  //json to object
+        //ASP.NET Core receives the reponse in JSON and maps it to: a LoginModel object the mapping is done by ASP.net Model binding system in System.Text.JSON
     {
-        ResponseModel<LoginModel> response = userBL.LoginUserBL(login);
+        ResponseModel<LoginResponseModel> response = userBL.LoginUserBL(login);
         if (response.IsSuccess)
         {
-            return Ok(response);
+            return Ok(response); //object to JSON sends back the result to client in the form of JSON
         }
         return BadRequest(response);
     }
 
     [HttpGet]
-    public void Default()
+    public IActionResult Default()
     {
         Console.WriteLine("Application is running");
+        return Ok("Fundoo Application is running");
     }
     
+    [Authorize]
+    [HttpGet]
+    [Route("profile")]
+    public IActionResult GetProfile() 
+    {
+        Console.WriteLine("Profile is displayed");
+        return Ok("Profile is displayed");
+    }
 }
 
