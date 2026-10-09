@@ -68,5 +68,44 @@ public class UserRL : IUserRL
 
         return null;
     }
-    
+
+
+
+    public UserEntity? FindUserByEmail(string email)
+    {
+        return context.Users.FirstOrDefault(u => u.Email == email);
+    }
+
+    //public void SaveResetToken(PasswordResetTokenEntity token)
+    //{
+    //    context.PasswordResetTokens.Add(token);
+    //    context.SaveChanges();
+    //}
+
+    //public PasswordResetTokenEntity? TokenExists(string token)
+    //{
+    //    return context.PasswordResetTokens.FirstOrDefault(tokens => tokens.TokenHash == token);
+    //}
+
+    public UserEntity? GetUserById(int userId)
+    {
+        return context.Users
+            .FirstOrDefault(user => user.UserId == userId);
+    }
+
+    public void UpdatePassword(UserEntity user)
+    {
+        context.Users.Update(user);
+        context.SaveChanges();
+    }
+
+    //public void MarkResetTokenAsUsed(
+    //    PasswordResetTokenEntity resetToken)
+    //{
+    //    resetToken.IsUsed = true;
+
+    //    context.PasswordResetTokens.Update(resetToken);
+    //    context.SaveChanges();
+    //}
+
 }

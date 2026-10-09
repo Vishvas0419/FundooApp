@@ -1,4 +1,6 @@
 
+using Microsoft.AspNetCore.Identity.UI.Services;
+using EmailService.Interface;
 namespace EmailController
 {
     public class Program
@@ -10,6 +12,7 @@ namespace EmailController
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<IEmailService, EmailService.Service.EmailService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

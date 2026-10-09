@@ -24,6 +24,8 @@ builder.Services.AddScoped<IUserBL , UserBL>();
 builder.Services.AddScoped<IUserRL , UserRL>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<PasswordHasher<UserEntity>>();
+builder.Services.AddScoped<EmailClient>();
+builder.Services.AddScoped<HttpClient>();
 
 //AddDbContext registers the FundooContext with DI and configures EF Core to use PostgreSQL through Npgsql.
 builder.Services.AddDbContext<FundooContext>(options =>

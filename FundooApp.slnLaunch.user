@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FundooAppProject\\FundooAppProject.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "EmailController\\EmailController.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "New Profile (1)",
+    "Projects": []
+  }
+]
