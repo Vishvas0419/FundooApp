@@ -3,11 +3,12 @@ using BusinessLayer.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
+using System.ComponentModel;
 
 namespace Fundoo.Controllers;
 
 [ApiController] // Treat the class as a ASP.NET Core Web API controller
-[Route("/api/[controller]")] //controller route
+[Route("/api/[controller]")] //controller route , [controller] is a route token.
 //Route defines the base URL for the controller [controller] -> replaced with the controller name i.e /api/Fundoo
 public class FundooController : ControllerBase //inside asp.net namespace we inherit it to use the Ok(), BadRequest() methods
 {
@@ -22,7 +23,7 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
     //if user hits this api call RegisterUser will gets executed
     public IActionResult RegisterUser(RegistrationModel registrationModel)
     {
-        ResponseModel<RegistrationModel> response =  userBL.RegisterUserBL(registrationModel);
+        ResponseModel<RegistrationModel> response = userBL.RegisterUserBL(registrationModel);
         if (response.IsSuccess)
         {
             return Ok(response); //200
@@ -31,9 +32,9 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
     }
 
     [HttpPost]
-    [Route("login")] //POST /api/fundoo/login
-    public IActionResult LoginUserBL(LoginModel login)  //json to object
-        //ASP.NET Core receives the reponse in JSON and maps it to: a LoginModel object the mapping is done by ASP.net Model binding system in System.Text.JSON
+    [Route("login")] //POST /api/fundoo/loginz
+    public IActionResult LoginUserBL(LoginModel login)  //json to object Model Binding
+    //ASP.NET Core receives the reponse in JSON and ASP.NET Core automatically creates a LoginModel object and puts: email,password inside it. 
     {
         ResponseModel<LoginResponseModel> response = userBL.LoginUserBL(login);
         if (response.IsSuccess)

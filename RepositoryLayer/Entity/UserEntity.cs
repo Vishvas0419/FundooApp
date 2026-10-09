@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RepositoryLayer.Entity;
 
+
+//this class members represent a row which will added to the Users tables
 public class UserEntity
 {
     [Key]

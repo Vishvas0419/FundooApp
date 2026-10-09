@@ -2,9 +2,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models;
 
+//Model Validation
+//Checking whether the populated model satisfies its validation rules by using attributes.
 public class RegistrationModel
 {
-    [MaxLength(15 , ErrorMessage = "Password is too long")]
+    [MaxLength(15 , ErrorMessage = "Password is too long")] //model valication happening here,
     public string FirstName { get; set; }
 
     [MaxLength(15 , ErrorMessage = "Password is too long")]

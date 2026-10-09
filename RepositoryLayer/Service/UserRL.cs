@@ -19,7 +19,9 @@ public class UserRL : IUserRL
     public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register)
     {
         var tempUser = context.Users.FirstOrDefault(u => u.Email == register.Email);
+
         ResponseModel<RegistrationModel> rm = new ResponseModel<RegistrationModel>();
+
         if (tempUser != null)
         {
             rm.IsSuccess = false;
@@ -27,8 +29,9 @@ public class UserRL : IUserRL
             rm.Data = null;
             return rm;
         }
-        
-        UserEntity user = new UserEntity();
+
+        //map request data to entity
+        UserEntity user = new UserEntity(); 
         user.FirstName = register.FirstName;
         user.LastName = register.LastName;
         user.Email = register.Email;
@@ -36,12 +39,14 @@ public class UserRL : IUserRL
         
         user.Password = hasher.HashPassword(user, register.Password);
         
-        context.Users.Add(user);
-      var result =   context.SaveChanges();
-      Console.WriteLine(result);
-      rm.IsSuccess = true;
-      rm.Message = "User successfully registered";
-      rm.Data = register;
+        context.Users.Add(user); //adding a row in Db<Users> through FundooContext : DbCOntext
+
+        var result = context.SaveChanges(); //actually adding that row to the db
+
+        Console.WriteLine(result);
+        rm.IsSuccess = true;
+        rm.Message = "User successfully registered";
+        rm.Data = register;
         return rm;
     }
 

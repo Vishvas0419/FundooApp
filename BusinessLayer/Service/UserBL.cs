@@ -23,7 +23,8 @@ public class UserBL : IUserBL
     public ResponseModel<LoginResponseModel> LoginUserBL(LoginModel login)
     {
         
-        UserEntity? userEntity =   userRL.LoginUserRL(login);
+        UserEntity? userEntity =  userRL.LoginUserRL(login);
+
         ResponseModel<LoginResponseModel> rm = new ResponseModel<LoginResponseModel>();
         if (userEntity == null)
         {
