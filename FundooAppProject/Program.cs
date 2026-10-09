@@ -105,7 +105,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 // Map Controllers = Controller endpoints become available and ASP.NET Core can route HTTP requests to them
 app.MapControllers(); 
