@@ -3,24 +3,24 @@ using Models;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
+using System.Net;
 namespace RepositoryLayer.Service;
 
 public class UserRL : IUserRL
 {
     FundooContext context;
-    private PasswordHasher<UserEntity> hasher;
+    private PasswordHasher<UserEntity> hasher; //UserRL needs to hash a password during registration and verify it during login.
     public UserRL(FundooContext context , PasswordHasher<UserEntity> hasher)
     {
         this.context = context;
         this.hasher = hasher;
     }
     
-    
     public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register)
     {
-        var tempUser = context.Users.FirstOrDefault(u => u.Email == register.Email);
-
         ResponseModel<RegistrationModel> rm = new ResponseModel<RegistrationModel>();
+
+        var tempUser = context.Users.FirstOrDefault(u => u.Email == register.Email);
 
         if (tempUser != null)
         {
@@ -35,9 +35,9 @@ public class UserRL : IUserRL
         user.FirstName = register.FirstName;
         user.LastName = register.LastName;
         user.Email = register.Email;
-        user.PhoneNumber = register.ContactNumber;
+        user.PhoneNumber = register.ContactNumber; 
         
-        user.Password = hasher.HashPassword(user, register.Password);
+        user.Password = hasher.HashPassword(user, register.Password); //storing hashed password in DB UserEntity
         
         context.Users.Add(user); //adding a row in Db<Users> through FundooContext : DbCOntext
 
@@ -45,7 +45,7 @@ public class UserRL : IUserRL
 
         Console.WriteLine(result);
         rm.IsSuccess = true;
-        rm.Message = "User successfully registered";
+        rm.Message = "User successfully registered";    
         rm.Data = register;
         return rm;
     }
@@ -60,11 +60,10 @@ public class UserRL : IUserRL
         {
             return null;
         }
-        
+        //Password verification establishes that the login credentials are valid.
         var decryptedPassword = hasher.VerifyHashedPassword(user, user.Password, login.Password);
 
         if (decryptedPassword == PasswordVerificationResult.Success) return user;
-        
 
         return null;
     }

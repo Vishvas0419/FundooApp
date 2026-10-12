@@ -13,6 +13,12 @@ using System.Runtime.Intrinsics.X86;
 using System.Text;
 
 
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+
+
+const string ExternalCookieScheme = "ExternalCookie";
+const string GoogleOidcScheme = "GoogleOIDC";
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
@@ -20,10 +26,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserBL , UserBL>();
-// this means Whenever the application needs an IUserBL, use UserBL as its implementation
+// this means Whenever the application needs an IUserBL, use UserBL as its implementation to create obj of UserBL
 builder.Services.AddScoped<IUserRL , UserRL>();
+
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<PasswordHasher<UserEntity>>();
+
 builder.Services.AddScoped<EmailClient>();
 builder.Services.AddScoped<HttpClient>();
 
@@ -32,18 +40,25 @@ builder.Services.AddDbContext<FundooContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("FundooConnection")); //this will access the config details (host, portnumber,db name, username,password) of your DB provider postgres from appsettings.json
 });
-
 //UseNpgsql Tells EF Core to Use PostgreSQL as the database provider.
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:8080")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddAuthentication(options =>
     {
-        options.DefaultAuthenticateScheme =
-            JwtBearerDefaults.AuthenticationScheme;
-
-        options.DefaultChallengeScheme =
-            JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; //Selects JWT Bearer authentication, conventionally named Bearer
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     })
-    .AddJwtBearer(options =>
+    .AddJwtBearer(options => //Configures the handler that reads and validates incoming bearer tokens.
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
@@ -63,6 +78,42 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+builder.Services.AddAuthentication()
+    .AddCookie(ExternalCookieScheme, options =>
+    {
+        options.Cookie.Name = "Fundoo.External";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SameSite = SameSiteMode.Lax;
+
+        // Local HTTP development only.
+        options.Cookie.SecurePolicy =
+            CookieSecurePolicy.SameAsRequest;
+
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    })
+    .AddOpenIdConnect(GoogleOidcScheme, options =>
+    {
+        options.SignInScheme = ExternalCookieScheme;
+        options.Authority = "https://accounts.google.com";
+
+        options.ClientId =
+            builder.Configuration["Authentication:Google:ClientId"]!;
+
+        options.ClientSecret =
+            builder.Configuration["Authentication:Google:ClientSecret"]!;
+
+        options.CallbackPath = "/signin-oidc";
+        options.ResponseType = "code";
+        options.UsePkce = true;
+        options.SaveTokens = false;
+
+        options.Scope.Clear();
+        options.Scope.Add("openid");
+        options.Scope.Add("profile");
+        options.Scope.Add("email");
+
+        options.GetClaimsFromUserInfoEndpoint = true;
+    }); 
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -101,6 +152,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseRouting();
+app.UseCors("AllowReactApp");
 app.UseAuthentication();
 app.UseAuthorization();
 

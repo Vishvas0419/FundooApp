@@ -14,7 +14,7 @@ namespace BusinessLayer.Service;
 public class UserBL : IUserBL
 {
     public IUserRL userRL;
-    public JwtService jwtService;
+    public JwtService jwtService; // used to generate JWT Token
     public EmailClient client;
     public IConfiguration configuration;
     public UserBL(IUserRL userRL , JwtService jwtService,EmailClient client,IConfiguration configuration)
@@ -49,7 +49,7 @@ public class UserBL : IUserBL
             rm.Data = new LoginResponseModel
             {
                 Email = userEntity.Email,
-                Token = jwtService.GenerateToken(userEntity)
+                Token = jwtService.GenerateToken(userEntity) //generate a signed token of the user data (userEntity) passed in the parameter and then return the token to client in the form of LoginResponseModel
             };
         }
         return rm;
@@ -93,8 +93,7 @@ public class UserBL : IUserBL
 
     }
 
-    public async Task<ResponseModel<string>> ResetPassword(
-        ResetPasswordModel model)
+    public async Task<ResponseModel<string>> ResetPassword(ResetPasswordModel model)
     {
         if (model.NewPassword != model.ConfirmPassword)
         {
