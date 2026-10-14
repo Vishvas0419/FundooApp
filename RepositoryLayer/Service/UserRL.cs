@@ -2,9 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Models;
 using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
+using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using System.Net;
-using RepositoryLayer.Entity;
+using System.Security.Cryptography;
 namespace RepositoryLayer.Service;
 
 public class UserRL : IUserRL
@@ -108,11 +109,6 @@ public class UserRL : IUserRL
     //    context.SaveChanges();
     //}
 
-
-
-
-
-
     public UserEntity? FindUserByExternalLogin(
         string provider,
         string providerSubject)
@@ -149,5 +145,57 @@ public class UserRL : IUserRL
         context.SaveChanges();
     }
 
+    public UserEntity CreateGoogleUserWithExternalLogin(
+        string email,
+        string firstName,
+        string lastName,
+        string providerSubject)
+    {
+        using var transaction = context.Database.BeginTransaction();
+
+        // Do not silently link an existing password account by email.
+        if (context.Users.Any(u => u.Email == email))
+        {
+            throw new InvalidOperationException(
+                "An account with this email already exists. " +
+                "Sign in with that account and use a verified account-linking flow.");
+        }
+
+        var user = new UserEntity
+        {
+            FirstName = string.IsNullOrWhiteSpace(firstName)
+                ? "Google"
+                : firstName,
+            LastName = string.IsNullOrWhiteSpace(lastName)
+                ? "User"
+                : lastName,
+            Email = email,
+            PhoneNumber = string.Empty
+        };
+
+        // Google users do not supply a Fundoo password.
+        // Store a hash of a random, undisclosed secret instead.
+        var randomSecret = Convert.ToBase64String(
+            RandomNumberGenerator.GetBytes(32));
+
+        user.Password = hasher.HashPassword(user, randomSecret);
+
+        context.Users.Add(user);
+        context.SaveChanges();
+
+        var externalLogin = new ExternalLoginEntity
+        {
+            UserId = user.UserId,
+            Provider = "Google",
+            ProviderSubject = providerSubject
+        };
+
+        context.ExternalLogins.Add(externalLogin);
+        context.SaveChanges();
+
+        transaction.Commit();
+
+        return user;
+    }
 
 }

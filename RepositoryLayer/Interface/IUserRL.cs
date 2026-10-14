@@ -1,6 +1,5 @@
 using Models;
 using RepositoryLayer.Entity;
-
 namespace RepositoryLayer.Interface;
 
 public interface IUserRL
@@ -25,4 +24,14 @@ public interface IUserRL
         string provider,
         string providerSubject
     );
+
+    UserEntity CreateGoogleUserWithExternalLogin(
+        string email,
+        string firstName,
+        string lastName,
+        string providerSubject);
+
+
+
+
 }
