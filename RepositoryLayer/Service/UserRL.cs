@@ -4,6 +4,7 @@ using RepositoryLayer.Context;
 using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using System.Net;
+using RepositoryLayer.Entity;
 namespace RepositoryLayer.Service;
 
 public class UserRL : IUserRL
@@ -106,5 +107,47 @@ public class UserRL : IUserRL
     //    context.PasswordResetTokens.Update(resetToken);
     //    context.SaveChanges();
     //}
+
+
+
+
+
+
+    public UserEntity? FindUserByExternalLogin(
+        string provider,
+        string providerSubject)
+    {
+        return context.ExternalLogins
+            .Where(e => e.Provider == provider &&
+                        e.ProviderSubject == providerSubject)
+            .Select(e => e.User)
+            .FirstOrDefault();
+    }
+
+    public bool ExternalLoginExists(
+        string provider,
+        string providerSubject)
+    {
+        return context.ExternalLogins.Any(
+            e => e.Provider == provider &&
+                 e.ProviderSubject == providerSubject);
+    }
+
+    public void AddExternalLogin(
+        int userId,
+        string provider,
+        string providerSubject)
+    {
+        var externalLogin = new ExternalLoginEntity
+        {
+            UserId = userId,
+            Provider = provider,
+            ProviderSubject = providerSubject
+        };
+
+        context.ExternalLogins.Add(externalLogin);
+        context.SaveChanges();
+    }
+
 
 }

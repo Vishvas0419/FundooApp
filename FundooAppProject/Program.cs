@@ -28,12 +28,16 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserBL , UserBL>();
 // this means Whenever the application needs an IUserBL, use UserBL as its implementation to create obj of UserBL
 builder.Services.AddScoped<IUserRL , UserRL>();
+builder.Services.AddScoped<INotesBL, NotesBL>();
+builder.Services.AddScoped<INotesRL, NotesRL>();
+
 
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<PasswordHasher<UserEntity>>();
 
 builder.Services.AddScoped<EmailClient>();
-builder.Services.AddScoped<HttpClient>();
+//builder.Services.AddScoped<HttpClient>();
+builder.Services.AddHttpClient();
 
 //AddDbContext registers the FundooContext with DI and configures EF Core to use PostgreSQL through Npgsql.
 builder.Services.AddDbContext<FundooContext>(options =>
@@ -157,7 +161,7 @@ app.UseRouting();
 app.UseCors("AllowReactApp");
 app.UseAuthentication();
 app.UseAuthorization();
-
+//Authentication should run before authorization so that authorization can use the identity established by authentication.
 
 //app.UseHttpsRedirection();
 

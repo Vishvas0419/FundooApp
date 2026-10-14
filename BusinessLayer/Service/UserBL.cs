@@ -56,8 +56,12 @@ public class UserBL : IUserBL
     }
 
 
+    //Why does Forgot Password need Task?
+    //Sending an email involves network I/O.Your Fundoo backend may need to wait for the email service to respond.
+    //If that operation is asynchronous,await allows ASP.NET Core to release the current thread to do other work while the email request is pending.When the operation completes, the method continues and returns the result.
 
-    public async Task<ResponseModel<string>> ForgetPasswordBL(ForgetPasswordModel model)
+    //this return type Asynchronously returns your response model, but doesn't directly express HTTP status codes.
+    public async Task<ResponseModel<string>> ForgetPasswordBL(ForgetPasswordModel model) 
     {
         UserEntity user = userRL.FindUserByEmail(model.Email);
 

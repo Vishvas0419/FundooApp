@@ -5,11 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Models;
 using System.ComponentModel;
 
-
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Security.Claims;
-
 
 namespace Fundoo.Controllers;
 
@@ -57,7 +55,7 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
         return Ok("Fundoo Application is running");
     }
     
-    [Authorize]
+    [Authorize] //That means a request to GET /api/Notes must be authenticated successfully 
     [HttpGet]
     [Route("profile")]
     public IActionResult GetProfile() 
@@ -65,7 +63,6 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
         Console.WriteLine("Profile is displayed");
         return Ok("Profile is displayed");
     }
-
 
     //[Authorize]
     [HttpPost]
@@ -77,7 +74,7 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
         {
             return Ok(responseModel);
         }
-        return BadRequest(responseModel);
+        return BadRequest(responseModel);   
     }
 
     //[Authorize]
@@ -153,5 +150,9 @@ public class FundooController : ControllerBase //inside asp.net namespace we inh
             GoogleSubject = googleSubject
         });
     }
+
+
+
+
 }
 

@@ -49,6 +49,7 @@ public class JwtService
 //WriteToken(token) serializes the JWT into its compact representation:
    }
 
+    
     public string GenerateResetToken(UserEntity user) //generates a short-lived token intended for the password-reset process.
     {
         var claims = new[]
