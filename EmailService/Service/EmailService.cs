@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
-
 namespace EmailService.Service;
 using EmailModel.Model;
 using Interface;

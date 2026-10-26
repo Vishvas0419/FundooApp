@@ -17,40 +17,47 @@ public class UserRL : IUserRL
         this.context = context;
         this.hasher = hasher;
     }
-    
-    public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register)
+
+    //public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register)
+    //{
+    //    ResponseModel<RegistrationModel> rm = new ResponseModel<RegistrationModel>();
+
+    //    var tempUser = context.Users.FirstOrDefault(u => u.Email == register.Email);
+
+    //    if (tempUser != null)
+    //    {
+    //        rm.IsSuccess = false;
+    //        rm.Message = "Email already exists";
+    //        rm.Data = null;
+    //        return rm;
+    //    }
+
+    //    //map request data to entity
+    //    UserEntity user = new UserEntity(); 
+    //    user.FirstName = register.FirstName;
+    //    user.LastName = register.LastName;
+    //    user.Email = register.Email;
+    //    user.PhoneNumber = register.ContactNumber; 
+
+    //    user.Password = hasher.HashPassword(user, register.Password); //storing hashed password in DB UserEntity
+
+    //    context.Users.Add(user); //adding a row in Db<Users> through FundooContext : DbCOntext
+
+    //    var result = context.SaveChanges(); //actually adding that row to the db
+
+    //    Console.WriteLine(result);
+    //    rm.IsSuccess = true;
+    //    rm.Message = "User successfully registered";    
+    //    rm.Data = register;
+    //    return rm;
+    //}
+
+    public void RegisterUserRL(UserEntity user)
     {
-        ResponseModel<RegistrationModel> rm = new ResponseModel<RegistrationModel>();
-
-        var tempUser = context.Users.FirstOrDefault(u => u.Email == register.Email);
-
-        if (tempUser != null)
-        {
-            rm.IsSuccess = false;
-            rm.Message = "Email already exists";
-            rm.Data = null;
-            return rm;
-        }
-
-        //map request data to entity
-        UserEntity user = new UserEntity(); 
-        user.FirstName = register.FirstName;
-        user.LastName = register.LastName;
-        user.Email = register.Email;
-        user.PhoneNumber = register.ContactNumber; 
-        
-        user.Password = hasher.HashPassword(user, register.Password); //storing hashed password in DB UserEntity
-        
-        context.Users.Add(user); //adding a row in Db<Users> through FundooContext : DbCOntext
-
-        var result = context.SaveChanges(); //actually adding that row to the db
-
-        Console.WriteLine(result);
-        rm.IsSuccess = true;
-        rm.Message = "User successfully registered";    
-        rm.Data = register;
-        return rm;
+        context.Users.Add(user);
+        context.SaveChanges();
     }
+
 
     public UserEntity? LoginUserRL(LoginModel login)
     {
@@ -70,8 +77,6 @@ public class UserRL : IUserRL
         return null;
     }
 
-
-
     public UserEntity? FindUserByEmail(string email)
     {
         return context.Users.FirstOrDefault(u => u.Email == email);
@@ -88,10 +93,10 @@ public class UserRL : IUserRL
     //    return context.PasswordResetTokens.FirstOrDefault(tokens => tokens.TokenHash == token);
     //}
 
-    public UserEntity? GetUserById(int userId)
+    public UserEntity GetUserById(int userId)
     {
-        return context.Users
-            .FirstOrDefault(user => user.UserId == userId);
+        
+        return context.Users.FirstOrDefault(user => user.UserId == userId);
     }
 
     public void UpdatePassword(UserEntity user)
@@ -109,9 +114,10 @@ public class UserRL : IUserRL
     //    context.SaveChanges();
     //}
 
-    public UserEntity? FindUserByExternalLogin(
-        string provider,
-        string providerSubject)
+    //here "Google" is the provider and "google-12345" is the providerSubject. 
+    //Both users have the same provider, Google, but their providerSubject values differ.
+    //for Existing Google user
+    public UserEntity? FindUserByExternalLogin(string provider, string providerSubject)
     {
         return context.ExternalLogins
             .Where(e => e.Provider == provider &&
@@ -128,7 +134,7 @@ public class UserRL : IUserRL
             e => e.Provider == provider &&
                  e.ProviderSubject == providerSubject);
     }
-
+    
     public void AddExternalLogin(
         int userId,
         string provider,
@@ -145,6 +151,7 @@ public class UserRL : IUserRL
         context.SaveChanges();
     }
 
+    // New Google user,Fundoo creates a user and stores the Google login association
     public UserEntity CreateGoogleUserWithExternalLogin(
         string email,
         string firstName,

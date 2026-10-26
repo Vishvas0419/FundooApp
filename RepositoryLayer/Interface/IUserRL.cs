@@ -4,10 +4,12 @@ namespace RepositoryLayer.Interface;
 
 public interface IUserRL
 {
-    public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register);
+    //public ResponseModel<RegistrationModel> RegisterUserRL(RegistrationModel register);
+    public void RegisterUserRL(UserEntity user);
+
     public UserEntity? LoginUserRL(LoginModel login);
     public UserEntity? FindUserByEmail(string email);
-    public UserEntity? GetUserById(int userId);
+    public UserEntity GetUserById(int userId);
     public void UpdatePassword(UserEntity user);
 
 
@@ -30,6 +32,8 @@ public interface IUserRL
         string firstName,
         string lastName,
         string providerSubject);
+
+    //public UserEntity GetProfileAsync(int userId);
 
 
 

@@ -1,0 +1,35 @@
+2026-10-26 00:32:32.4198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - - -
+2026-10-26 00:32:32.5004|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-26 00:32:32.5059|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-26 00:32:32.5186|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-26 00:32:32.5186|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-26 00:32:32.5186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 19.5624ms
+2026-10-26 00:32:32.5186|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-26 00:32:32.5186|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - 302 - - 111.5714ms
+2026-10-26 00:34:26.2130|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/signin-oidc - application/x-www-form-urlencoded 705
+2026-10-26 00:34:26.2270|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-26 00:34:26.2270|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://accounts.google.com does not have permission to access the resource.
+2026-10-26 00:34:26.6741|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: ExternalCookie signed in.
+2026-10-26 00:34:26.6741|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/signin-oidc - 302 - - 462.0758ms
+2026-10-26 00:34:26.6741|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-complete - - -
+2026-10-26 00:34:26.6741|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-26 00:34:26.6741|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleComplete", controller = "Fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleComplete() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-26 00:34:26.9007|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__provider_0='?', @__providerSubject_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "ExternalLogins" AS e
+INNER JOIN "Users" AS u ON e."UserId" = u."UserId"
+WHERE e."Provider" = @__provider_0 AND e."ProviderSubject" = @__providerSubject_1
+LIMIT 1
+2026-10-26 00:34:27.0054|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u
+    WHERE u."Email" = @__email_0)
+2026-10-26 00:34:27.1875|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: ExternalCookie signed out.
+2026-10-26 00:34:27.1893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ConflictObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-26 00:34:27.1893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject) in 511.9094ms
+2026-10-26 00:34:27.1893|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-26 00:34:27.1893|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-complete - 409 - application/json;+charset=utf-8 516.3440ms
+2026-10-26 00:34:27.2332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/favicon.ico - - -
+2026-10-26 00:34:27.2332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/favicon.ico - 404 0 - 1.2641ms
+2026-10-26 00:34:27.2332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5109/favicon.ico, Response status code: 404

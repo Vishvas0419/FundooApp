@@ -55,9 +55,10 @@ public class JwtService
         var claims = new[]
         {
             new Claim(ClaimTypes.NameIdentifier,user.UserId.ToString()),
-            new Claim("purpose","password-reset")
+            new Claim("purpose","password-reset") //purpose=password-reset is a custom claim inside your JWT. It does not perform the reset by itself; it allows your backend to recognize and enforce that the token is intended for password resetting.
         };
 
+        //generates a reset JWT and signs it using Jwt:Key.
         var key = new SymmetricSecurityKey(
            Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!)
         );
@@ -76,5 +77,51 @@ public class JwtService
 
         return new JwtSecurityTokenHandler().WriteToken(token); //handles the serialization : it converts the token from obj to string in its token form because the Token property should receive the token as string so that i can do  
     }
+
+    public int ValidatePasswordResetToken(string token)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+
+        var key = Encoding.UTF8.GetBytes(
+           configuration["Jwt:Key"]
+           ?? throw new InvalidOperationException("JWT key is not configured.")
+        );
+
+        var principal = tokenHandler.ValidateToken(
+           token,
+           new TokenValidationParameters
+           {
+               ValidateIssuer = true,
+               ValidateAudience = true,
+               ValidateLifetime = true,
+               ValidateIssuerSigningKey = true,
+
+               ValidIssuer = configuration["Jwt:Issuer"],
+               ValidAudience = configuration["Jwt:Audience"],
+
+               IssuerSigningKey = new SymmetricSecurityKey(key)
+           },
+           out _
+        );
+
+        var purpose = principal.FindFirst("purpose")?.Value;
+
+        if (purpose != "password-reset")
+        {
+            throw new SecurityTokenException("Invalid reset token purpose.");
+        }
+
+        var userIdClaim = principal.FindFirst(ClaimTypes.NameIdentifier);
+
+        if (userIdClaim == null ||
+            !int.TryParse(userIdClaim.Value, out var userId))
+        {
+            throw new SecurityTokenException("Invalid user ID claim.");
+        }
+
+        return userId;
+    }
+
+
 
 }

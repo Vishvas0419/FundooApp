@@ -1,0 +1,151 @@
+2026-10-17 12:55:13.7266|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-17 12:55:13.9109|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-17 12:55:13.9467|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-17 12:55:13.9467|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-17 12:55:13.9467|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-17 12:55:14.8294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-17 12:55:16.2494|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 12:55:16.2744|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-17 12:55:16.7639|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-17 12:55:16.8000|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 520.9461ms
+2026-10-17 12:55:16.8000|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 12:55:16.8000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 1996.1497ms
+2026-10-17 13:00:08.7489|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-17 13:00:08.8114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 62.5569ms
+2026-10-17 13:00:08.8404|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:00:08.8434|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 2.9791ms
+2026-10-17 13:00:08.8434|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:00:08.8743|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 29.0392ms
+2026-10-17 13:00:08.9801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:00:08.9801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.3513ms
+2026-10-17 13:00:08.9836|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:00:08.9969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.4097ms
+2026-10-17 13:00:09.0312|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:00:09.0480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 16.8468ms
+2026-10-17 13:05:58.2971|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-17 13:05:58.4059|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-17 13:05:58.4443|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-17 13:05:58.4443|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-17 13:05:58.4443|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-17 13:05:59.8902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-17 13:06:00.0335|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:06:00.0651|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-17 13:06:00.1851|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-17 13:06:00.2140|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 143.8013ms
+2026-10-17 13:06:00.2140|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:06:00.2189|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 340.5361ms
+2026-10-17 13:06:02.2221|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-17 13:06:02.2792|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 57.2829ms
+2026-10-17 13:06:02.3547|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:06:02.3569|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 2.1984ms
+2026-10-17 13:06:02.3569|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:06:02.3756|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:06:02.3756|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.4660ms
+2026-10-17 13:06:02.3882|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.2578ms
+2026-10-17 13:06:02.4687|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:06:02.4872|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Fundoo.Controllers.FundooController.GetProfile (FundooAppProject). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-17 13:06:02.4872|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 500 - text/plain;+charset=utf-8 25.2124ms
+2026-10-17 13:06:02.6126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:06:02.6242|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 11.6084ms
+2026-10-17 13:06:14.7954|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:06:14.7954|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Fundoo.Controllers.FundooController.GetProfile (FundooAppProject). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-17 13:06:14.8121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 500 - text/html;+charset=utf-8 16.7540ms
+2026-10-17 13:06:14.8379|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:06:14.8403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:06:14.8403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.9195ms
+2026-10-17 13:06:14.8403|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 10.7524ms
+2026-10-17 13:06:14.8688|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:06:14.8688|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.2896ms
+2026-10-17 13:06:14.8688|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:06:14.8752|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 5.6039ms
+2026-10-17 13:07:17.1444|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-17 13:07:17.2565|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-17 13:07:17.2899|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-17 13:07:17.2899|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-17 13:07:17.2899|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-17 13:07:18.6707|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-17 13:07:18.7981|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:07:18.8145|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-17 13:07:18.9202|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-17 13:07:18.9481|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 129.2079ms
+2026-10-17 13:07:18.9481|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:07:18.9519|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 292.6645ms
+2026-10-17 13:07:22.2299|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-17 13:07:22.2701|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 40.3950ms
+2026-10-17 13:07:22.2902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:07:22.2902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 2.0917ms
+2026-10-17 13:07:22.2902|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:07:22.3080|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:07:22.3080|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.4603ms
+2026-10-17 13:07:22.3193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.2625ms
+2026-10-17 13:07:22.3898|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:07:22.3898|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.2852ms
+2026-10-17 13:07:22.5330|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:07:22.5467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.7644ms
+2026-10-17 13:07:34.8282|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/Fundoo/profile/2 - - -
+2026-10-17 13:07:34.8282|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-10-17 13:07:34.8282|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2026-10-17 13:07:34.8282|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/Fundoo/profile/2 - 401 0 - 9.5189ms
+2026-10-17 13:08:13.8195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-17 13:08:13.8195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 3.4797ms
+2026-10-17 13:08:13.8519|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:08:13.8519|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:08:13.8519|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.7197ms
+2026-10-17 13:08:13.8610|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 9.1243ms
+2026-10-17 13:08:13.9429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:08:13.9429|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 5.4139ms
+2026-10-17 13:08:14.0392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:08:14.0392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.2854ms
+2026-10-17 13:08:14.0392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:08:14.0481|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 6.7083ms
+2026-10-17 13:08:20.5349|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-17 13:08:20.6399|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-17 13:08:20.6737|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-17 13:08:20.6737|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-17 13:08:20.6737|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-17 13:08:22.0263|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-17 13:08:22.1608|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:08:22.1779|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-17 13:08:22.2801|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-17 13:08:22.3048|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 122.3744ms
+2026-10-17 13:08:22.3048|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-17 13:08:22.3048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 298.8187ms
+2026-10-17 13:08:23.9676|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-17 13:08:24.0123|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 44.8079ms
+2026-10-17 13:08:24.0349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:08:24.0349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:08:24.0349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 2.0353ms
+2026-10-17 13:08:24.0677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 32.7362ms
+2026-10-17 13:08:24.1962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-17 13:08:24.1962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-17 13:08:24.1962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.9870ms
+2026-10-17 13:08:24.1962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-17 13:08:24.2127|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 16.3881ms
+2026-10-17 13:08:24.2170|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 19.2263ms
+2026-10-17 13:08:29.1009|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/Fundoo/profile/2 - - -
+2026-10-17 13:08:29.1009|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GetProfile (FundooAppProject)'
+2026-10-17 13:08:29.1113|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProfile", controller = "Fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RepositoryLayer.Entity.UserEntity]] GetProfile(Int32) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-17 13:08:32.3315|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (51ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber"
+FROM "Users" AS u
+WHERE u."UserId" = @__userId_0
+LIMIT 1
+2026-10-17 13:08:32.4017|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'RepositoryLayer.Entity.UserEntity'.
+2026-10-17 13:08:32.4038|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GetProfile (FundooAppProject) in 3290.6828ms
+2026-10-17 13:08:32.4038|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GetProfile (FundooAppProject)'
+2026-10-17 13:08:32.4038|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/Fundoo/profile/2 - 200 - application/json;+charset=utf-8 3309.3381ms

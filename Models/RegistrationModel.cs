@@ -36,4 +36,6 @@ public class RegistrationModel
         ContactNumber = contactNumber;
         Email = email;
     }
+
+    public RegistrationModel() { }
 }

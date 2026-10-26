@@ -1,0 +1,173 @@
+2026-10-23 10:09:13.1358|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-23 10:09:13.2809|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-23 10:09:13.3225|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-23 10:09:13.3225|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-23 10:09:13.3225|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-23 10:09:14.2043|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-23 10:09:16.2924|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 10:09:16.3267|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-23 10:09:17.3830|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-23 10:09:17.4199|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 1084.3514ms
+2026-10-23 10:09:17.4199|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 10:09:17.4269|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 3254.0794ms
+2026-10-23 10:09:19.5365|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-23 10:09:19.6513|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 115.2456ms
+2026-10-23 10:09:19.7214|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 10:09:19.7214|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 7.9096ms
+2026-10-23 10:09:19.7370|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 10:09:19.7982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 61.2132ms
+2026-10-23 10:09:19.9802|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-23 10:09:20.0140|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 33.8551ms
+2026-10-23 10:09:20.5791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 10:09:20.5791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 1.9502ms
+2026-10-23 10:09:20.5791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 10:09:20.6114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.8909ms
+2026-10-23 10:10:09.7150|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/forget-password - application/json 44
+2026-10-23 10:10:09.7276|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-23 10:10:09.7276|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-23 10:10:09.7276|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.ForgetPassword (FundooAppProject)'
+2026-10-23 10:10:09.7460|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgetPassword", controller = "Fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgetPassword(Models.ForgetPasswordModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-23 10:10:11.9094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (112ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-23 10:10:16.4237|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.ForgetPassword (FundooAppProject) in 6674.2288ms
+2026-10-23 10:10:16.4237|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.ForgetPassword (FundooAppProject)'
+2026-10-23 10:10:16.4237|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7178)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BusinessLayer.Service.EmailClient.SendEmail(EmailModel model) in D:\FundooApplication\FundooApplication\Middleware\Services\Email\EmailClient.cs:line 16
+   at BusinessLayer.Service.UserBL.ForgetPasswordBL(ForgetPasswordModel model) in D:\FundooApplication\FundooApplication\BusinessLayer\Service\UserBL.cs:line 181
+   at Fundoo.Controllers.FundooController.ForgetPassword(ForgetPasswordModel forgetPasswordModel) in D:\FundooApplication\FundooApplication\FundooAppProject\Controller\FundooController.cs:line 94
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-23 10:10:16.4984|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/forget-password - 500 - text/plain;+charset=utf-8 6784.2602ms
+2026-10-23 10:40:52.5806|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-23 10:40:52.6943|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-23 10:40:52.7293|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-23 10:40:52.7293|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-23 10:40:52.7293|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-23 10:40:53.7778|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-23 10:40:53.9271|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 10:40:53.9461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-23 10:40:54.0674|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-23 10:40:54.0873|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 135.7614ms
+2026-10-23 10:40:54.0873|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 10:40:54.0873|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 326.4499ms
+2026-10-23 10:40:56.7255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-23 10:40:56.8133|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 87.9940ms
+2026-10-23 10:40:57.1744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 10:40:57.1744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 10:40:57.1744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 3.4819ms
+2026-10-23 10:40:57.2101|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 10:40:57.2101|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 1.7431ms
+2026-10-23 10:40:57.2330|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 58.6974ms
+2026-10-23 10:40:57.3730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-23 10:40:57.3992|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 26.2874ms
+2026-10-23 10:40:57.6585|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 10:40:57.6852|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.8156ms
+2026-10-23 10:41:21.7480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/Email/send - application/json 84
+2026-10-23 10:41:21.7555|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-23 10:41:21.7555|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-23 10:41:21.7555|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EmailController.Controller.EmailController.SendEmail (FundooAppProject)'
+2026-10-23 10:41:21.7734|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "SendEmail", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendEmail(EmailModel.Model.EmailModel) on controller EmailController.Controller.EmailController (FundooAppProject).
+2026-10-23 10:41:22.4333|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EmailController.Controller.EmailController.SendEmail (FundooAppProject) in 656.3233ms
+2026-10-23 10:41:22.4333|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EmailController.Controller.EmailController.SendEmail (FundooAppProject)'
+2026-10-23 10:41:22.4382|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at System.Net.Dns.<GetAddrInfoWithTelemetryAsync>g__CompleteAsync|34_0[T](Task task, String hostName, Int64 startingTimestamp)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, CancellationToken cancellationToken)
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetworkAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken)
+   at EmailService.Service.EmailService.SendEmail(EmailModel email) in D:\FundooApplication\FundooApplication\BusinessLayer\Service\EmailService.cs:line 61
+   at EmailController.Controller.EmailController.SendEmail(EmailModel model) in D:\FundooApplication\FundooApplication\FundooAppProject\Controller\EmailController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-10-23 10:41:22.4769|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/Email/send - 500 - text/plain;+charset=utf-8 728.9657ms
+2026-10-23 11:32:29.0468|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-23 11:32:29.1776|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-23 11:32:29.2342|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-23 11:32:29.2342|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-23 11:32:29.2342|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-23 11:32:30.1319|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-23 11:32:30.3122|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 11:32:30.3387|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-23 11:32:30.5045|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-23 11:32:30.5283|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 183.8439ms
+2026-10-23 11:32:30.5283|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-23 11:32:30.5329|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 413.1743ms
+2026-10-23 11:32:32.6753|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-23 11:32:32.7835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 108.4007ms
+2026-10-23 11:32:32.8276|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 11:32:32.8311|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 3.5112ms
+2026-10-23 11:32:32.8311|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 11:32:32.9033|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 68.9854ms
+2026-10-23 11:32:33.0607|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-23 11:32:33.0919|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 31.2272ms
+2026-10-23 11:32:34.2306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-23 11:32:34.2306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 2.2659ms
+2026-10-23 11:32:34.2352|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-23 11:32:34.2610|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 25.8386ms
+2026-10-23 11:33:08.5866|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/Email/send - application/json 100
+2026-10-23 11:33:08.5949|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-23 11:33:08.5949|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-23 11:33:08.6340|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EmailController.Controller.EmailController.SendEmail (FundooAppProject)'
+2026-10-23 11:33:08.6505|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "SendEmail", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendEmail(EmailModel.Model.EmailModel) on controller EmailController.Controller.EmailController (FundooAppProject).
+2026-10-23 11:33:13.1001|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-23 11:33:13.1001|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EmailController.Controller.EmailController.SendEmail (FundooAppProject) in 4447.2593ms
+2026-10-23 11:33:13.1001|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EmailController.Controller.EmailController.SendEmail (FundooAppProject)'
+2026-10-23 11:33:13.1001|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/Email/send - 200 - text/plain;+charset=utf-8 4519.1181ms
+2026-10-23 12:23:03.3346|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5109/api/fundoo - - -
+2026-10-23 12:23:03.3346|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2026-10-23 12:23:03.3445|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2026-10-23 12:23:03.3445|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5109/api/fundoo - 405 0 - 10.9902ms
+2026-10-23 12:23:53.6454|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5109/api/fundoo - - -
+2026-10-23 12:23:53.6454|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported'
+2026-10-23 12:23:53.6454|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported'
+2026-10-23 12:23:53.6454|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5109/api/fundoo - 405 0 - 2.6276ms

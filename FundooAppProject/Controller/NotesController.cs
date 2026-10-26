@@ -16,11 +16,8 @@ public class NotesController : ControllerBase
     private readonly INotesBL notesBL;
 
     private int? CurrentUserId =>
-        int.TryParse(
-            User.FindFirstValue(ClaimTypes.NameIdentifier),
-            out var userId)
-            ? userId
-            : null;
+        int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), 
+            out var userId) ? userId : null;
 
     public NotesController(INotesBL notesBL)
     {

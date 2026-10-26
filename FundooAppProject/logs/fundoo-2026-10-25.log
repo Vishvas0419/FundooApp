@@ -1,0 +1,182 @@
+2026-10-25 14:18:51.0208|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-25 14:18:51.1678|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 155.8163ms
+2026-10-25 14:18:51.2463|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-25 14:18:51.2463|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-25 14:18:51.2515|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 3.2968ms
+2026-10-25 14:18:51.2900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 43.6880ms
+2026-10-25 14:18:51.3988|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-25 14:18:51.3988|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.3695ms
+2026-10-25 14:18:51.4079|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-25 14:18:51.4079|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 7.6312ms
+2026-10-25 14:18:51.4937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-25 14:18:51.5544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 60.7188ms
+2026-10-25 14:19:01.9334|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/Fundoo/google-login - - -
+2026-10-25 14:19:01.9476|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 14:19:01.9683|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 14:19:02.0178|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-25 14:19:02.5805|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-25 14:19:02.5805|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 614.3186ms
+2026-10-25 14:19:02.5805|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 14:19:02.5805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/Fundoo/google-login - 302 0 - 650.6159ms
+2026-10-25 14:19:31.3544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/Fundoo/google-complete - - -
+2026-10-25 14:19:31.3544|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-25 14:19:31.3652|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleComplete", controller = "Fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleComplete() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 14:19:31.3984|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-25 14:19:31.4096|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject) in 44.1212ms
+2026-10-25 14:19:31.4096|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-25 14:19:31.4096|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/Fundoo/google-complete - 401 - application/json;+charset=utf-8 55.5321ms
+2026-10-25 18:50:37.7170|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-25 18:50:37.8767|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-25 18:50:37.9133|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-25 18:50:37.9133|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-25 18:50:37.9133|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-25 18:50:40.5785|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-25 18:50:43.0310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-25 18:50:43.0756|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:50:44.3018|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-25 18:50:44.3425|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 1255.0551ms
+2026-10-25 18:50:44.3425|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-25 18:50:44.3517|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 3802.3613ms
+2026-10-25 18:50:47.3628|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-25 18:50:47.4718|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 109.2188ms
+2026-10-25 18:50:47.5228|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-25 18:50:47.5228|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 4.2131ms
+2026-10-25 18:50:47.5228|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-25 18:50:47.5938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 64.0818ms
+2026-10-25 18:50:47.7954|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-25 18:50:47.8027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 5.5882ms
+2026-10-25 18:50:47.8027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-25 18:50:47.8715|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-25 18:50:47.8923|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 85.1650ms
+2026-10-25 18:50:47.9066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 35.0641ms
+2026-10-25 18:51:46.5641|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - application/json 174
+2026-10-25 18:51:46.5641|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 18:51:46.5641|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-25 18:51:46.5641|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-25 18:51:46.6193|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterUser(Models.RegistrationModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:51:48.6825|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (102ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "PhoneNumber", "Salt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "UserId";
+2026-10-25 18:51:48.7619|INFO|Fundoo.Controllers.FundooController|User registration completed successfully
+2026-10-25 18:51:48.7619|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Models.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-25 18:51:48.7686|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject) in 2145.5525ms
+2026-10-25 18:51:48.7686|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-25 18:51:48.7686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - 200 - application/json;+charset=utf-8 2216.7829ms
+2026-10-25 18:52:27.5985|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - application/json 67
+2026-10-25 18:52:27.5985|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 18:52:27.5985|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-25 18:52:27.5985|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:52:27.5985|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "LoginUserBL", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUserBL(Models.LoginModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:52:28.0814|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-25 18:52:28.2365|WARN|Fundoo.Controllers.FundooController|User login failed..
+2026-10-25 18:52:28.2365|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-25 18:52:28.2365|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject) in 630.9658ms
+2026-10-25 18:52:28.2365|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:52:28.2365|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - 400 - application/json;+charset=utf-8 642.1809ms
+2026-10-25 18:52:50.7999|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - application/json 67
+2026-10-25 18:52:50.7999|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 18:52:50.7999|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-25 18:52:50.7999|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:52:50.7999|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "LoginUserBL", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUserBL(Models.LoginModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:52:50.8282|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-25 18:52:50.9618|WARN|Fundoo.Controllers.FundooController|User login failed..
+2026-10-25 18:52:50.9618|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-25 18:52:50.9618|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject) in 161.5362ms
+2026-10-25 18:52:50.9618|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:52:50.9618|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - 400 - application/json;+charset=utf-8 163.0194ms
+2026-10-25 18:53:14.1735|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - application/json 67
+2026-10-25 18:53:14.1735|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 18:53:14.1735|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-25 18:53:14.1735|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:53:14.1735|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "LoginUserBL", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUserBL(Models.LoginModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:53:14.1735|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-25 18:53:14.3219|WARN|Fundoo.Controllers.FundooController|User login failed..
+2026-10-25 18:53:14.3219|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-25 18:53:14.3219|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject) in 146.7217ms
+2026-10-25 18:53:14.3219|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:53:14.3219|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - 400 - application/json;+charset=utf-8 149.5687ms
+2026-10-25 18:53:29.4012|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - application/json 67
+2026-10-25 18:53:29.4012|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 18:53:29.4012|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-25 18:53:29.4012|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:53:29.4012|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "LoginUserBL", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUserBL(Models.LoginModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 18:53:29.4012|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-25 18:53:29.5651|WARN|Fundoo.Controllers.FundooController|User login failed..
+2026-10-25 18:53:29.5651|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-25 18:53:29.5651|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject) in 163.2526ms
+2026-10-25 18:53:29.5651|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-25 18:53:29.5651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - 400 - application/json;+charset=utf-8 164.7858ms
+2026-10-25 19:01:27.1254|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/google-login - - -
+2026-10-25 19:01:27.1254|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/google-login - 404 - - 10.9979ms
+2026-10-25 19:01:27.1254|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5109/google-login, Response status code: 404
+2026-10-25 19:01:34.3575|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - - -
+2026-10-25 19:01:34.3604|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:01:34.3604|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 19:01:34.3604|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-25 19:01:35.2511|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-25 19:01:35.2511|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 891.8199ms
+2026-10-25 19:01:35.2511|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:01:35.2511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - 302 - - 900.2441ms
+2026-10-25 19:01:36.7939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/signin-oidc - application/x-www-form-urlencoded 702
+2026-10-25 19:01:36.7939|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-25 19:01:36.7939|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin null does not have permission to access the resource.
+2026-10-25 19:01:37.3198|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: ExternalCookie signed in.
+2026-10-25 19:01:37.3198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/signin-oidc - 302 - - 533.4403ms
+2026-10-25 19:01:37.3308|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-complete - - -
+2026-10-25 19:01:37.3308|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-25 19:01:37.3308|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleComplete", controller = "Fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleComplete() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 19:01:37.4963|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__provider_0='?', @__providerSubject_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "ExternalLogins" AS e
+INNER JOIN "Users" AS u ON e."UserId" = u."UserId"
+WHERE e."Provider" = @__provider_0 AND e."ProviderSubject" = @__providerSubject_1
+LIMIT 1
+2026-10-25 19:01:37.5114|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: ExternalCookie signed out.
+2026-10-25 19:01:37.5114|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-25 19:01:37.5114|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject) in 172.7336ms
+2026-10-25 19:01:37.5114|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleComplete (FundooAppProject)'
+2026-10-25 19:01:37.5114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-complete - 200 - application/json;+charset=utf-8 182.2370ms
+2026-10-25 19:01:37.5772|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/favicon.ico - - -
+2026-10-25 19:01:37.5772|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/favicon.ico - 404 0 - 1.0381ms
+2026-10-25 19:01:37.5772|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5109/favicon.ico, Response status code: 404
+2026-10-25 19:01:55.1528|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - - -
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 1.587ms
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:01:55.1568|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - 302 - - 6.3073ms
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - - -
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 0.8081ms
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:04:56.3321|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - 302 - - 9.5696ms
+2026-10-25 19:38:03.8395|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - - -
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GoogleLogin", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes (GoogleOIDC).
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectHandler|AuthenticationScheme: GoogleOIDC was challenged.
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject) in 1.9731ms
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.GoogleLogin (FundooAppProject)'
+2026-10-25 19:38:03.8533|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo/google-login - 302 - - 18.1204ms

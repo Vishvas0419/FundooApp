@@ -1,0 +1,218 @@
+2026-10-22 09:38:17.8779|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-22 09:38:18.0617|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-22 09:38:18.1018|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-22 09:38:18.1018|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-22 09:38:18.1018|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-22 09:38:21.6888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-22 09:38:23.8791|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 09:38:23.9212|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:38:25.2424|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-22 09:38:25.2824|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 1350.1055ms
+2026-10-22 09:38:25.2824|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 09:38:25.2824|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 3626.6830ms
+2026-10-22 09:38:25.6252|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-22 09:38:25.7262|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 101.1519ms
+2026-10-22 09:38:25.7720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-22 09:38:25.7720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui.css - - -
+2026-10-22 09:38:25.7720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui-bundle.js - - -
+2026-10-22 09:38:25.7720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui-standalone-preset.js - - -
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 8.8917ms
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 0.9686ms
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-standalone-preset.js was not modified
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-bundle.js was not modified
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui.css was not modified
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui-standalone-preset.js - 304 - text/javascript 15.2238ms
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui.css - 304 - text/css 19.9274ms
+2026-10-22 09:38:25.7811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/swagger-ui-bundle.js - 304 - text/javascript 19.0313ms
+2026-10-22 09:38:25.8722|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 90.4772ms
+2026-10-22 09:38:26.1176|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-22 09:38:26.1490|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 31.4763ms
+2026-10-22 09:38:26.3516|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-22 09:38:26.3738|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 22.3165ms
+2026-10-22 09:39:13.3272|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - application/json 180
+2026-10-22 09:39:13.3387|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-22 09:39:13.3387|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-22 09:39:13.3387|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-22 09:39:13.3522|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterUser(Models.RegistrationModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:39:15.7937|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (90ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "PhoneNumber", "Salt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "UserId";
+2026-10-22 09:39:15.8506|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'RepositoryLayer.Context.FundooContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Salt" of relation "Users" does not exist
+
+POSITION: 83
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Salt" of relation "Users" does not exist
+    Position: 83
+    File: parse_target.c
+    Line: 1073
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Salt" of relation "Users" does not exist
+
+POSITION: 83
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Salt" of relation "Users" does not exist
+    Position: 83
+    File: parse_target.c
+    Line: 1073
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2026-10-22 09:46:32.3832|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (73ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2026-10-22 09:46:32.4319|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-10-22 09:46:32.4930|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2026-10-22 09:46:32.5422|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2026-10-22 09:46:32.5422|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-10-22 09:46:32.5604|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20261022041610_AddSaltToUserEntity'.
+2026-10-22 09:46:32.6587|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE "Users" ADD "Salt" text NOT NULL DEFAULT '';
+2026-10-22 09:46:32.6587|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20261022041610_AddSaltToUserEntity', '8.0.31');
+2026-10-22 09:46:53.9020|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-22 09:46:54.0419|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-22 09:46:54.0866|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-22 09:46:54.0866|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-22 09:46:54.0866|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-22 09:46:55.3842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-22 09:46:55.5325|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 09:46:55.5714|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:46:55.7391|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-22 09:46:55.7614|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 184.6908ms
+2026-10-22 09:46:55.7614|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 09:46:55.7660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 397.9493ms
+2026-10-22 09:46:58.2689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/index.html - - -
+2026-10-22 09:46:58.3803|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/index.html - 200 - text/html;charset=utf-8 111.5748ms
+2026-10-22 09:46:58.4214|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-22 09:46:58.4270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 5.5663ms
+2026-10-22 09:46:58.4270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-22 09:46:58.4940|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 63.6934ms
+2026-10-22 09:46:58.6560|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - - -
+2026-10-22 09:46:58.6905|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 34.5829ms
+2026-10-22 09:46:59.5700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - - -
+2026-10-22 09:46:59.5700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_framework/aspnetcore-browser-refresh.js - 200 14937 application/javascript;+charset=utf-8 1.2558ms
+2026-10-22 09:46:59.5781|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/_vs/browserLink - - -
+2026-10-22 09:46:59.5972|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 19.0550ms
+2026-10-22 09:47:59.6805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - application/json 181
+2026-10-22 09:47:59.6922|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-22 09:47:59.6922|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-22 09:47:59.6922|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-22 09:47:59.7062|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterUser(Models.RegistrationModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:47:59.7570|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-10-22 09:47:59.7850|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject) in 75.1289ms
+2026-10-22 09:47:59.7850|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-22 09:47:59.7850|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - 400 - application/problem+json;+charset=utf-8 105.0892ms
+2026-10-22 09:48:13.4819|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - application/json 175
+2026-10-22 09:48:13.4819|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-22 09:48:13.4819|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-22 09:48:13.4873|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-22 09:48:13.4873|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterUser(Models.RegistrationModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:48:15.0906|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (90ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "FirstName", "LastName", "Password", "PhoneNumber", "Salt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "UserId";
+2026-10-22 09:48:15.1680|INFO|Fundoo.Controllers.FundooController|User registration completed successfully
+2026-10-22 09:48:15.1680|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Models.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-10-22 09:48:15.1680|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject) in 1684.1036ms
+2026-10-22 09:48:15.1680|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.RegisterUser (FundooAppProject)'
+2026-10-22 09:48:15.1803|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/register - 200 - application/json;+charset=utf-8 1698.4934ms
+2026-10-22 09:48:38.3720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - application/json 58
+2026-10-22 09:48:38.3720|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2026-10-22 09:48:38.3720|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5109 does not have permission to access the resource.
+2026-10-22 09:48:38.3720|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-22 09:48:38.3777|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "LoginUserBL", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUserBL(Models.LoginModel) on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 09:48:38.8048|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."UserId", u."Email", u."FirstName", u."LastName", u."Password", u."PhoneNumber", u."Salt"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2026-10-22 09:48:39.0616|INFO|Fundoo.Controllers.FundooController|User login completed successfully
+2026-10-22 09:48:39.0616|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Models.ResponseModel`1[[Models.LoginResponseModel, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-10-22 09:48:39.0645|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject) in 686.6251ms
+2026-10-22 09:48:39.0645|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.LoginUserBL (FundooAppProject)'
+2026-10-22 09:48:39.0645|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5109/api/Fundoo/login - 200 - application/json;+charset=utf-8 693.0097ms
+2026-10-22 10:32:00.8574|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\LC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-22 10:32:00.9716|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5109
+2026-10-22 10:32:01.0084|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2026-10-22 10:32:01.0084|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2026-10-22 10:32:01.0084|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\FundooApplication\FundooApplication\FundooAppProject
+2026-10-22 10:32:02.3851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5109/api/fundoo - - -
+2026-10-22 10:32:02.5496|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 10:32:02.5782|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Default", controller = "Fundoo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Default() on controller Fundoo.Controllers.FundooController (FundooAppProject).
+2026-10-22 10:32:02.7715|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2026-10-22 10:32:02.7939|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Fundoo.Controllers.FundooController.Default (FundooAppProject) in 208.7369ms
+2026-10-22 10:32:02.7939|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Fundoo.Controllers.FundooController.Default (FundooAppProject)'
+2026-10-22 10:32:02.8001|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5109/api/fundoo - 200 - text/plain;+charset=utf-8 429.9065ms

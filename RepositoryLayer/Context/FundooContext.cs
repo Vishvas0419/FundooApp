@@ -10,19 +10,8 @@ public class FundooContext : DbContext //we inherit it because to get configurat
     public DbSet<UserEntity> Users { get; set; } //A database set containing UserEntity objects.
                                                  //DbSet<> = DB set of entities, represents a collection of UserEntity records that EF Core can query and modify with the help of LINQ
 
-
-    //so that if we want to to operations we can do 
-
-    //FundooContext context;
-    //context.Users.Add(UserEntity);
-    //then Users.SaveChanges();
-
-
-
+    //so that if we want to to operations we can do context.Users.Add(UserEntity); then Users.SaveChanges();
     public DbSet<ExternalLoginEntity> ExternalLogins { get; set; }
-
-
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

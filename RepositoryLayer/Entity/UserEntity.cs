@@ -25,6 +25,8 @@ public class UserEntity
 
     [Required]
     public string PhoneNumber { get; set; } = string.Empty;
-    
+
+    [Required]
+    public string Salt {  get; set; } = string.Empty;
     
 }
